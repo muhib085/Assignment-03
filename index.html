@@ -36,6 +36,12 @@
               clifford: "#da373d",
               "circle-arrow": "rgb(171, 239, 95)",
               "circle-arrow-light": "rgba(171, 239, 95, 0.5)",
+              "liveable-space-bg": "#F4F4F4",
+              "about-us-bg": "rgb(255, 255, 255)",
+              "first-cart-bg": "rgb(231, 193, 211)",
+              "second-cart-bg": "rgb(239, 218, 110)",
+              "third-cart-bg": "rgb(164, 218, 195)",
+              "fourth-cart-bg": "rgb(119, 170, 234)",
             },
           },
         },
@@ -43,16 +49,16 @@
     </script>
   </head>
   <body class="font-primary">
-    <header class="xl:container mx-auto">
+    <header>
       <!-- navbar -->
 
       <!-- Banner section -->
       <section>
-        <div class="text-center space-y-6">
+        <div class="text-center space-y-6 px-5">
           <div class="flex justify-center">
             <img src="./assets/banner.png" alt="" />
           </div>
-          <h2 class="text-6xl font-extrabold">
+          <h2 class="text-5xl font-extrabold">
             A barn house of this design has a <br />
             striking appearance
           </h2>
@@ -62,7 +68,9 @@
             sleek metal accents, and large windows that flood the space with
             natural light.
           </p>
-          <button class="btn bg-circle-arrow-light rounded-full">
+          <button
+            class="btn bg-circle-arrow-light rounded-full sm:w-full lg:w-auto"
+          >
             View Details
             <i
               class="fa-solid fa-arrow-right bg-circle-arrow text-white p-1 rounded-full -rotate-45"
@@ -77,8 +85,114 @@
     <main>
       <!-- livable space -->
 
-      <section>
-        <div></div>
+      <section class="bg-liveable-space-bg mt-24">
+        <div class="lg:flex lg:justify-center pt-16 gap-8">
+          <!-- left div -->
+          <div class="space-y-6 relative text-center lg:text-left">
+            <div class="hidden sm:block absolute left-7 -top-10">
+              <img src="./assets/Vector.png" alt="" />
+            </div>
+            <button class="bg-about-us-bg px-2 py-1 rounded-full">
+              <i class="fa-solid fa-arrow-right pr-3"></i>About Us
+            </button>
+            <h3 class="font-bold text-4xl">
+              We design thoughtful,<br />
+              liveable spaces
+            </h3>
+            <p>
+              The barn house captivates with its blend of rustic charm and
+              <br />
+              modern sophistication, featuring weathered wood, sleek metal
+              accents.
+            </p>
+            <!-- cart div-01 -->
+            <div class="flex bg-about-us-bg p-3 rounded-lg">
+              <div class="p-6">
+                <img src="./assets/commercial.png" alt="" />
+              </div>
+              <div>
+                <h3 class="text-xl font-extrabold">Commercial</h3>
+                <p>
+                  The barn house captivates with its blend of rustic charm and
+                  modern.
+                </p>
+              </div>
+            </div>
+            <!-- cart div-02 -->
+            <div class="flex bg-about-us-bg p-3 rounded-lg">
+              <div class="p-6">
+                <img src="./assets/residential.png" alt="" />
+              </div>
+              <div>
+                <h3 class="text-xl font-extrabold">Residential</h3>
+                <p>
+                  The barn house captivates with its blend of rustic charm and
+                  modern.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- right div -->
+          <div>
+            <img src="./assets/Rectangle.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Our work process -->
+      <section class="bg-liveable-space-bg pb-24">
+        <div class="pt-24 text-center space-y-5">
+          <button class="bg-about-us-bg px-2 py-1 rounded-full">
+            <i class="fa-solid fa-arrow-right pr-3"></i>How We Work
+          </button>
+          <h3 class="font-bold text-4xl">Our Works Process</h3>
+          <p>
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+        </div>
+
+        <!-- work process carts -->
+        <div
+          class="grid lg:grid-cols-4 gap-5 justify-items-center lg:px-24 mt-8"
+        >
+          <!-- single cart -->
+          <div class="bg-first-cart-bg p-6 rounded-2xl space-y-3">
+            <img src="./assets/concept.png" alt="" />
+            <h4>Concept</h4>
+            <p>
+              The barn house captivates with its blend of rustic charm and
+              modern.
+            </p>
+          </div>
+          <!-- single cart -->
+          <div class="bg-second-cart-bg p-6 rounded-2xl space-y-3">
+            <img src="./assets/flow-chart.png" alt="" />
+            <h4>Design Process</h4>
+            <p>
+              The barn house captivates with its blend of rustic charm and
+              modern.
+            </p>
+          </div>
+          <!-- single cart -->
+          <div class="bg-third-cart-bg p-6 rounded-2xl space-y-3">
+            <img src="./assets/vision.png" alt="" />
+            <h4>Supervision</h4>
+            <p>
+              The barn house captivates with its blend of rustic charm and
+              modern.
+            </p>
+          </div>
+          <!-- single cart -->
+          <div class="bg-fourth-cart-bg p-6 rounded-2xl space-y-3">
+            <img src="./assets/budget-planning.png" alt="" />
+            <h4>Budget Planning</h4>
+            <p>
+              The barn house captivates with its blend of rustic charm and
+              modern.
+            </p>
+          </div>
+        </div>
       </section>
     </main>
   </body>
